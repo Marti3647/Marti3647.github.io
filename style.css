@@ -1,0 +1,70 @@
+
+
+@font-face {
+    font-family: montserratBold;
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+}
+
+/*
+Screen < 600px Mobile
+*/
+
+
+body {
+    background: linear-gradient(135deg,
+    #f5f7fa 0%, #c3cfe2 100%);
+
+    font-family: "Lato", sans-serif;
+    font-size: 14px;   
+}
+
+h1, h2, h3 {
+    font-family: montserratBold, sans-serif;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2,2rem;
+}
+
+div {
+    font-size: 1,2rem;
+    line-height: 1.5;
+    max-width: 70ch;
+}
+
+/*
+ 600px < Screen < 960px Tablet
+*/
+
+@media screen and (min-width: 600px) {
+
+    body {
+        background: linear-gradient(135deg,
+        rgb(240, 12, 12) 0%, rgba(13, 127, 241, 0.267) 100%); 
+          /* 
+        backgrunn fargen skal fjernes. Er bare for å vise hvilken screen
+        vi er på
+        */
+        font-size: 16px;
+    } 
+    
+
+}
+/*
+960 < Screen Laptop
+*/
+@media screen and (min-width: 961px) {
+
+    body {
+        background: linear-gradient(135deg,
+        rgb(12, 240, 126) 0%, rgba(13, 127, 241, 0.267) 100%);  
+        /* 
+        backgrunn fargen skal fjernes. Er bare for å vise hvilken screen
+        vi er på
+        */
+        font-size: 24px;
+    } 
+
+}
