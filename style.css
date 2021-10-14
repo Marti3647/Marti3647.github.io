@@ -55,7 +55,7 @@ div {
 /*
 960 < Screen Laptop
 */
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 960px) {
 
     body {
         background: linear-gradient(135deg,
