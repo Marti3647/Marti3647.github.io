@@ -13,6 +13,7 @@ Screen < 600px Mobile
 body {
     background: linear-gradient(135deg,
     #f5f7fa 0%, #c3cfe2 100%);
+    z-index: -10;
 
     font-family: "Lato", sans-serif;
     font-size: 14px;   
@@ -36,11 +37,12 @@ div {
 article {
     max-width: 95vw;
     padding: 2rem;
-    border-bottom: 0.1px solid transparent; 
+    border-bottom: 0.1px solid gray; 
 }
-.intro-container{
+.intro-container {
     background: #c5192d;
-    z-index: 2;
+    z-index: 10;
+    
 }
 ul{
     list-style: none;
