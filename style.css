@@ -34,15 +34,24 @@ div {
     max-width: 70ch;
 }
 article {
-    width: 95vw;
+    width: 87,5vw;
     padding: 2rem;
-    border-bottom: 0.1px solid grey;
-    margin: 2,5vw;
-    
-    
+    border-bottom: 0.1px solid transparent; 
 }
-article > intro-container{
-    color: #c5192d;
+.intro-container{
+    background-color: #c5192d;
+    z-index: 20;
+    list-style: none;
+}
+li::before{
+    content: "\1f"
+}
+article > img{
+    max-width: 100%;
+    object-fit: contain;
+}
+article:nth-child(3){
+    transform:translate(-1);
 }
 
 /*
