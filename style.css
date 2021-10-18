@@ -5,35 +5,24 @@
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
 
+html > body > header {
 
-html, body{
-        height: 100%;
-        margin: 0;
-    
-}
-html, body, header {
-
-        background-image: url("studentsbg.jpg");
+        background-image: url("assets/img/studentsbg.png");
         background-attachment: fixed; 
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
-        height: 100%; 
+        background-position: center;
+        min-height: 55vh;
+        width: 100%
 }
 
-html, body, header, div {
-
+header > div {
+        max-height: 55vh;
+        max-width: 95vw;
+        position: sticky;
+        bottom: -4rem; 
         background-color: #c5192d;
-
-        margin-top: 64px; 
  }  
-
-
-
-
-
-
-
 
 
 
