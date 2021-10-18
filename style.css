@@ -1,13 +1,35 @@
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
-
 @font-face {
     font-family: montserratBold;
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
-
-/*
+body {
+    background: linear-gradient(135deg,
+    #f5f7fa 0%, #c3cfe2 100%);
+    z-index: -10;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;  
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: montserratBold, sans-serif;
+    max-width: 65ch;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+div > p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 70ch;
+}
+/*-------------------------->HEADER<--------------------------*/
+/* 
 html > body > header {
         background-image: url("assets/img/studentsbg.png");
         color: white; 
@@ -25,56 +47,41 @@ html > body > header {
         margin-left: -0.5rem;
         margin-bottom: 4rem;
 */
+
 header {
     background-image: url("assets/img/studentsbg.png");
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center top; 
-    background-size: 100%;
-
+    background-size: cover;
+    min-height: 55vh;
 }
 
 header div { 
+
     margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin:auto;
+    padding: 2rem;
+    /* dette er riktig, men ikke helt enda.
+    position:absolute;
+    top: 4rem;
+    */
+    left: 2.5%;
     background-color: #c5192d;
     width: 95%;
-    margin:auto;
     color: white;
-    text-align: center;
-    
+    text-align: center; 
+
  } 
- 
 
-body {
-    background: linear-gradient(135deg,
-    #f5f7fa 0%, #c3cfe2 100%);
-    z-index: -10;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;  
-    margin: 0;
-}
-
+/*------------------------->MAIN CONTENT<-----------------------*/
 main {
     box-shadow: 0 0 1px 0 darkgray;
     background-color: whitesmoke;
     width: 95%;
     margin:auto;
-}
 
-h1, h2, h3 {
-    font-family: montserratBold, sans-serif;
-}
-h1 {
-    font-size: 4rem;
-}
-h2 {
-    font-size: 2.2rem;
-}
-
-div > p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    max-width: 70ch;
 }
 article {
     max-width: 95vw;
@@ -117,10 +124,12 @@ article:nth-child(3) > div{
 article:nth-child(3) > img{
     transform: rotate(180deg);
 }
+
+/*---------------------------> FOOTER<------------------------*/
 footer{
     background-color: #c5192d;
     padding: 2rem;
-    width: 95vw;
+    width: 95%;
     color: white;
     text-align: center;
     margin-top: 2rem;
@@ -130,7 +139,8 @@ a {
     text-decoration: none;
 }
 /*
- 600px < Screen < 960px Tablet
+ 600px < Screen < 960px 
+ -------------------->Tablet<-----------------------
 */
 
 @media screen and (min-width: 600px) {
@@ -144,10 +154,11 @@ a {
         */
         font-size: 16px;
     } 
-
-    
+    header {
+        min-height: 65vh; 
+    }
     main, footer, header div {
-        max-width: 85%;
+        width: 85%;
     }
     article{
         max-width: 85vw;
@@ -197,14 +208,11 @@ a {
     }
     article:nth-child(3) > img{
         transform: initial;
-    }
-
-    
-    
-
+    } 
 }
 /*
 960 < Screen Laptop
+----------------------->Desktop<-----------------------
 */
 @media screen and (min-width: 960px) {
 
@@ -217,6 +225,11 @@ a {
         */
         font-size: 24px;
     } 
+
+    main, footer, header div {
+        width: 70%;
+    }
+
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, transparent 0%);
     }
