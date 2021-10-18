@@ -124,6 +124,7 @@ footer{
     color: white;
     text-align: center;
     margin-top: 2rem;
+    
 }
 a {
     color: inherit;
@@ -152,6 +153,28 @@ a {
     article{
         max-width: 85vw;
        /* float: left; */
+    }
+    article::after{
+        display: table;
+        clear: both;
+     }
+     article > div{
+         float: left;
+         width: 45%; 
+         margin-right: 10%;
+    }
+    #intro-container > div:nth-child(2){
+        float: right;
+        width: 45%;
+    }
+    img:nth-child(1){
+        float:left;
+        width: 45%;
+        margin-right: 10%;
+    }
+    img{
+        float: left;
+        width: 45%;
     }
     img:nth-child(1){
         float:left;

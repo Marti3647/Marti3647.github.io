@@ -5,6 +5,7 @@ Our group is made up of people with no knowledge of HTML or CSS before this cour
 we have done what we can for now. 
 
 Kind regards from Group #1:
+
 Nathalia Jin s365331
 
 Martine Klæboe s364773
