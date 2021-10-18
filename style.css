@@ -5,9 +5,36 @@
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
 
-/*
-Screen < 600px Mobile
-*/
+
+html, body{
+        height: 100%;
+        margin: 0;
+    
+}
+html, body, header {
+
+        background-image: url("studentsbg.jpg");
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100%; 
+}
+
+html, body, header, div {
+
+        background-color: #c5192d;
+
+        margin-top: 64px; 
+ }  
+
+
+
+
+
+
+
+
 
 
 body {
