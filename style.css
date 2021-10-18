@@ -166,11 +166,12 @@ a {
     #intro-container > div:nth-child(2){
         float: right;
         width: 45%;
+        margin: 0;
     }
     img:nth-child(1){
         float:left;
         width: 45%;
-        margin-right: 10%;
+        margin-right: 0;
     }
     img{
         float: left;
