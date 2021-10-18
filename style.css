@@ -12,15 +12,19 @@ html > body > header {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 100%;
+        
+        max-width: 95vw;
+        position: sticky;
+        height: 55vh;
         margin: 0;
+        text-align: center;
 }
 
-header > div {
-        position: sticky;
-        bottom: - 4rem; 
-        background-color: #c5192d;
+header > div { 
+    top: 4rem;
+
+    padding: 2rem;
+    background-color: #c5192d;
         
  }  
 header > div > h1{
