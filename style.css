@@ -5,8 +5,6 @@
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
 
-/* MAIN CODE */
-
 main {
     box-shadow: 0 0 1px darkgray;
     background-color: whitesmoke;
@@ -38,7 +36,6 @@ header div {
  }  
  
 
-
 body {
     background: linear-gradient(135deg,
     #f5f7fa 0%, #c3cfe2 100%);
@@ -47,6 +44,14 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     margin: 0;   
+}
+/* MAIN CODE */
+
+main {
+    box-shadow: 0 0 1px 0 darkgray;
+
+    background-color: whitesmoke;
+
 }
 
 h1, h2, h3 {
