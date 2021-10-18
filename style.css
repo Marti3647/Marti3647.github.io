@@ -215,6 +215,48 @@ a {
         */
         font-size: 24px;
     } 
-    
+
+    article::after{
+        display: table;
+        clear: both;
+    }
+    article > div{
+        float: left;
+        width: 45%; 
+        margin-right: 10%;
+    }
+    #intro-container > div:nth-child(2){
+        float: right;
+        width: 45%;
+        margin: 0;
+    }
+    img:nth-child(1){
+        float:left;
+        width: 45%;
+        margin-right: 0;
+    }
+    img{
+        float: left;
+        width: 45%;
+    }
+    img:nth-child(1){
+        float:left;
+        width: 45%;
+        margin-right: 10%;
+    }
+    article:nth-child(3) > div{
+        float: right;
+        width: 45%;
+        margin-right: 0;
+    }
+    article:nth-child(3){
+        transform: initial;
+    } 
+    article:nth-child(3) > div{
+        transform:initial
+    }
+    article:nth-child(3) > img{
+        transform: initial;
+    }
 
 }
