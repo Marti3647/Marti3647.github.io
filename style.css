@@ -5,7 +5,24 @@
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
 
-
+/*
+html > body > header {
+        background-image: url("assets/img/studentsbg.png");
+        color: white; 
+        background-attachment: absolute; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 103%;
+        position: relative;
+        top:0;
+        min-height: 55vh;
+        margin: 0;
+        text-align: center;
+        z-index: 100;
+        margin-left: -0.5rem;
+        margin-bottom: 4rem;
+*/
 header {
     background-image: url("assets/img/studentsbg.png");
     background-repeat: no-repeat;
@@ -34,7 +51,6 @@ body {
     font-size: 14px;  
     margin: 0;
 }
-/* MAIN CODE */
 
 main {
     box-shadow: 0 0 1px 0 darkgray;
@@ -42,7 +58,6 @@ main {
     background-color: whitesmoke;
     width: 95%;
     margin:auto;
-
 }
 
 h1, h2, h3 {
@@ -118,13 +133,14 @@ article:nth-child(3) > img{
         */
         font-size: 16px;
     } 
-    main, footer, header>div {
-        display: block;
+
+    
+    main, footer, header div {
         max-width: 85%;
     }
     article{
         max-width: 85vw;
-        float: left;
+       /* float: left; */
     }
    #intro-container > div:nth-child(1){
         display: inline-block;
