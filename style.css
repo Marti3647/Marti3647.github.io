@@ -5,6 +5,13 @@
     src: url(assets/fonts/Montserrat-Bold.ttf);
 }
 
+/* MAIN CODE */
+
+main {
+    box-shadow: 0 0 1px darkgray;
+    
+}
+
 html > body > header {
         background-image: url("assets/img/studentsbg.png");
         color: white; 
