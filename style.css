@@ -6,7 +6,7 @@
 }
 
 html > body > header {
-        background-image: url("assets/img/studentsbg.png");
+        background: url("assets/img/studentsbg.png");
         color: white; 
         background-attachment: absolute; 
         background-repeat: no-repeat;
@@ -26,9 +26,6 @@ header > div {
     background-color: #c5192d;
         
  }  
-header > div > h1{
-    margin: 0;
-}
 
 
 body {
