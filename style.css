@@ -8,7 +8,6 @@
 body {
     background: linear-gradient(135deg,
     #f5f7fa 0%, #c3cfe2 100%);
-    z-index: -10;
     font-family: "Lato", sans-serif;
     font-size: 14px;  
     margin: 0;
@@ -29,59 +28,36 @@ div > p {
     max-width: 70ch;
 }
 /*-------------------------->HEADER<--------------------------*/
-/* 
-html > body > header {
-        background-image: url("assets/img/studentsbg.png");
-        color: white; 
-        background-attachment: absolute; 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 103%;
-        position: relative;
-        top:0;
-        min-height: 55vh;
-        margin: 0;
-        text-align: center;
-        z-index: 100;
-        margin-left: -0.5rem;
-        margin-bottom: 4rem;
-*/
-
 header {
     background-image: url("assets/img/studentsbg.png");
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position: center top; 
-    background-size: cover;
+    background-position:center top; 
+    background-size:cover;
     min-height: 55vh;
+    justify-content: center;
 }
 
 header div { 
-
-    margin-top: 10rem;
-    margin-bottom: 2rem;
     margin:auto;
     padding: 2rem;
-    /* dette er riktig, men ikke helt enda.
+  /*
     position:absolute;
     top: 4rem;
-    */
+  */  
     left: 2.5%;
     background-color: #c5192d;
-    width: 95%;
+    width: 95vw;
     color: white;
     text-align: center; 
-
  } 
 
 /*------------------------->MAIN CONTENT<-----------------------*/
 main {
     box-shadow: 0 0 1px 0 darkgray;
     background-color: whitesmoke;
-    width: 95%;
+    width: 95vw;
     margin:auto;
-
 }
 article {
     max-width: 95vw;
@@ -129,11 +105,11 @@ article:nth-child(3) > img{
 footer{
     background-color: #c5192d;
     padding: 2rem;
-    width: 95%;
+    width: 95vw;
     color: white;
     text-align: center;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin: 2rem 10px 0 10px;
+
 }
 a {
     color: inherit;
@@ -141,18 +117,13 @@ a {
 }
 /*
  600px < Screen < 960px 
- -------------------->Tablet<-----------------------
+ -------------------------->Tablet<------------------------------
 */
 
 @media screen and (min-width: 600px) {
 
     body {
-        background: linear-gradient(135deg,
-        rgb(240, 12, 12) 0%, rgba(13, 127, 241, 0.267) 100%); 
-          /* 
-        backgrunn fargen skal fjernes. Er bare for å vise hvilken screen
-        vi er på
-        */
+
         font-size: 16px;
     } 
     header {
@@ -218,12 +189,6 @@ a {
 @media screen and (min-width: 960px) {
 
     body {
-        background: linear-gradient(135deg,
-        rgb(12, 240, 126) 0%, rgba(13, 127, 241, 0.267) 100%);  
-        /* 
-        backgrunn fargen skal fjernes. Er bare for å vise hvilken screen
-        vi er på
-        */
         font-size: 24px;
     } 
 
