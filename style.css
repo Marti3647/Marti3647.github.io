@@ -182,9 +182,9 @@ a {
     main, footer, header div {
         width: 70%;
     }
-
-    #intro-container{
-        background: linear-gradient(90deg, #c5192d 50%, transparent 0%);
+    footer{
+        display: block;
+        margin-left: 15%;
     }
 
     main{
@@ -201,6 +201,7 @@ a {
     article > div, article > img {
         display: inline-block;
         max-width: 45%;
+        margin-left: -4px;
     }
     article > div:first-child, article > img:first-child{
         margin-right: 10%;
