@@ -130,48 +130,28 @@ a {
         min-height: 65vh; 
     }
     main, footer, header div {
-        width: 85%;
+        width: 85vw;
     }
+    main{
+        display: block;
+    }
+
     article{
+        display: block;
         max-width: 85vw;
-       /* float: left; */
     }
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, transparent 0%);
     }
-    article::after{
-        display: table;
-        clear: both;
-     }
-     article > div{
-         float: left;
-         width: 45%; 
-         margin-right: 10%;
+    article > div, img {
+        display: inline-block;
+        max-width: 45%;
     }
-    #intro-container > div:nth-child(2){
-        float: right;
-        width: 45%;
-        margin: 0;
+    article > div:first-child, img:first-child{
+        padding-right: 10%;
     }
-    img:nth-child(1){
-        float:left;
-        width: 45%;
-        margin-right: 0;
-    }
-    img{
-        float: left;
-        width: 45%;
-    }
-    img:nth-child(1){
-        float:left;
-        width: 45%;
-        margin-right: 10%;
-    }
-    article:nth-child(3) > div{
-        float: right;
-        width: 45%;
-        margin-right: 0;
-    }
+   
+    
     article:nth-child(3){
         transform: initial;
     }
