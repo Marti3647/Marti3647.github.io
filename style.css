@@ -49,7 +49,7 @@ header div {
     background-color: #c5192d;
     width: 95vw;
     color: white;
-    text-align: center; 
+    text-align: -webkit-center; 
  } 
 
 /*------------------------->MAIN CONTENT<-----------------------*/
@@ -63,6 +63,10 @@ article {
     max-width: 95vw;
     padding: 2rem;
     border-bottom: 0.1px solid gray; 
+}
+article > div {
+    position: relative;
+    vertical-align: top;
 }
 #intro-container {
     background-color: #c5192d;
@@ -195,6 +199,7 @@ a {
         display: block;
         max-width: 70vw;
     }
+
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, transparent 0%);
     }
